@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Ludo Tournament</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+margin:0;
+min-height:100vh;
+
+background-image:url("ludo2.png.jpeg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-family:Arial;
+color:white;
+}
+
+/* login box */
+
+.login-box{
+background:rgba(0,0,0,0.75);
+padding:40px;
+border-radius:15px;
+text-align:center;
+width:300px;
+}
+
+/* input */
+
+input{
+width:90%;
+padding:10px;
+margin:10px;
+border:none;
+border-radius:6px;
+}
+
+/* button */
+
+
+
+/* speaker icon */
+
+#speaker{
+position:absolute;
+top:20px;
+right:20px;
+widbutton{
+padding:10px 30px;
+background:#22c55e;
+border:none;
+color:white;
+font-size:18px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#16a34a;
+transform:scale(1.1);
+}th:30px;
+height:30px;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<img id="speaker" src="speaker.png.jpeg" onclick="toggleMusic()">
+
+<div class="login-box">
+
+<h1>Ludo Tournament</h1>
+
+<input type="text" placeholder="User ID"><br>
+
+<input type="password" placeholder="Password"><br>
+
+<button>Login</button>
+
+</div>
+
+<audio id="bgmusic" autoplay loop>
+<source src="music.mp3.mpeg" type="audio/mp3">
+</audio>
+
+<script>
+
+var music=document.getElementById("bgmusic");
+music.volume=0.2;
+
+function toggleMusic(){
+
+if(music.paused){
+
+music.play();
+document.getElementById("speaker.png.jpeg").src="speaker.png";
+
+}else{
+
+music.pause();
+document.getElementById("mute.png.jpeg").src="mute.png";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
